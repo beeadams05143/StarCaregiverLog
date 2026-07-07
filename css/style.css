@@ -2588,13 +2588,14 @@ em {
   }
 
   main {
-    width: auto;
+    width: 7.5in;
+    margin: 0 auto;
   }
 
   .page {
     width: 7.5in;
     height: 10in;
-    margin: 0;
+    margin: 0 auto 0.35in;
     box-shadow: none;
   }
 
