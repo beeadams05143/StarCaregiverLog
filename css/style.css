@@ -206,7 +206,7 @@ main {
 }
 
 .about-page {
-  padding: 0.42in 0.54in 0.28in;
+  padding: 0.42in 0.54in 0.55in;
   background:
     radial-gradient(circle at 12% 10%, rgba(216, 179, 106, 0.12), transparent 2.6in),
     linear-gradient(180deg, #fffdf7 0%, #fff8ec 100%);
@@ -252,7 +252,7 @@ main {
   display: grid;
   grid-template-columns: 0.9in 1fr;
   gap: 0.2in;
-  padding: 0.145in 0 0.15in;
+  padding: 0.12in 0 0.12in;
   border-bottom: 1.5px solid #e0c994;
 }
 
@@ -314,7 +314,7 @@ main {
 .form-section h3,
 .notes-section h3,
 .note-grid h3 {
-  margin: 0 0 0.05in;
+  margin: 0 0 0.03in;
   color: #af8a2f;
   font-size: 16px;
   letter-spacing: 0.08em;
