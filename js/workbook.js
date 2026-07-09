@@ -542,7 +542,7 @@ const monthlyOutcomesBlank = articleMarkup(
         <label>Total Illness Days <span></span></label>
         <label>Aggression Days <span></span></label>
         <label>Medication Changes <span></span></label>
-        <label>General Observations <span></span></label>
+        <label class="summary-wide">General Observations <span></span></label>
       </div>
     </section>
     <div class="insights-grid refined-grid">
@@ -559,17 +559,19 @@ const monthlyOutcomesBlank = articleMarkup(
   `
 );
 
-const healthDashboardBlank = articleMarkup(
-  ['analytics-page', 'monthly-patterns-page', 'blank-template'],
-  `
+function healthDashboardBlankMarkup() {
+  return articleMarkup(
+    ['analytics-page', 'monthly-patterns-page', 'blank-template'],
+    `
     <header class="analytics-header"><div><p>STAR Insights and Trends</p><h1>Health, Behavior &amp; ADL Dashboard</h1></div><span>Blank Printable</span></header>
     <div class="patterns-grid refined-patterns">
       <section class="analytics-panel sleep-panel wide"><h2>Hours of Sleep Over Time</h2><svg class="chart-svg full-line-chart blank-chart" viewBox="0 0 620 150" role="img" aria-label="Hours of sleep line graph"><g class="grid-lines"><path d="M45 20 H590 M45 45 H590 M45 70 H590 M45 95 H590 M45 120 H590 M55 20 V120 M123 20 V120 M208 20 V120 M293 20 V120 M378 20 V120 M463 20 V120 M548 20 V120 M565 20 V120"></path></g><path class="axis" d="M45 18 V122 H592"></path><g class="day-ticks"><path d="M55 120 V126 M72 120 V126 M89 120 V126 M106 120 V126 M123 120 V126 M140 120 V126 M157 120 V126 M174 120 V126 M191 120 V126 M208 120 V126 M225 120 V126 M242 120 V126 M259 120 V126 M276 120 V126 M293 120 V126 M310 120 V126 M327 120 V126 M344 120 V126 M361 120 V126 M378 120 V126 M395 120 V126 M412 120 V126 M429 120 V126 M446 120 V126 M463 120 V126 M480 120 V126 M497 120 V126 M514 120 V126 M531 120 V126 M548 120 V126 M565 120 V126"></path></g><g class="major-day-ticks"><path d="M55 118 V128 M123 118 V128 M208 118 V128 M293 118 V128 M378 118 V128 M463 118 V128 M548 118 V128 M565 118 V128"></path></g><text x="24" y="123">4</text><text x="24" y="98">6</text><text x="24" y="73">8</text><text x="20" y="48">10</text><text x="20" y="23">12</text><text x="52" y="140">1</text><text x="118" y="140">5</text><text x="202" y="140">10</text><text x="287" y="140">15</text><text x="372" y="140">20</text><text x="458" y="140">25</text><text x="542" y="140">30</text><text x="560" y="140">31</text></svg><p class="chart-note">Plot one dot each day using Hours of Sleep from the Physical Health section. Connect dots at the end of the month.</p></section>
       <section class="analytics-panel health-calendar-panel wide"><h2>Health Event Calendar</h2><div class="event-calendar blank-health-calendar"><b>Sun</b><b>Mon</b><b>Tue</b><b>Wed</b><b>Thu</b><b>Fri</b><b>Sat</b><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div><div class="event-key"><span class="key-blue"></span> Illness <span class="key-purple"></span> PRN Given <span class="key-star">★</span> Medication Change <span class="key-yellow"></span> Change in Appetite <span class="key-green"></span> Night Waking / Difficulty Falling Asleep</div><p class="chart-note">Write the dates into the blank calendar for the month. Mark health events on the correct date using the key.</p></section>
-      <section class="analytics-panel wide adl-visual-panel"><h2>ADL Prompt Level Progress Over Time</h2><div class="adl-mini-grid"><svg class="mini-line blank-chart" viewBox="0 0 200 82" role="img" aria-label="Hygiene prompt level mini line graph"><text class="mini-title" x="22" y="12">Hygiene</text><g class="grid-lines"><path d="M22 22 H184 M22 32 H184 M22 42 H184 M22 52 H184 M22 62 H184"></path></g><g class="mini-day-ticks"><path d="M24.0 62 V67 M29.2 62 V67 M34.4 62 V67 M39.6 62 V67 M44.8 62 V67 M50.0 62 V67 M55.2 62 V67 M60.4 62 V67 M65.6 62 V67 M70.8 62 V67 M76.0 62 V67 M81.2 62 V67 M86.4 62 V67 M91.6 62 V67 M96.8 62 V67 M102.0 62 V67 M107.2 62 V67 M112.4 62 V67 M117.6 62 V67 M122.8 62 V67 M128.0 62 V67 M133.2 62 V67 M138.4 62 V67 M143.6 62 V67 M148.8 62 V67 M154.0 62 V67 M159.2 62 V67 M164.4 62 V67 M169.6 62 V67 M174.8 62 V67 M180.0 62 V67"></path></g><g class="mini-major-ticks"><path d="M24.0 59 V69 M44.8 59 V69 M96.8 59 V69 M148.8 59 V69 M180.0 59 V69"></path></g><g class="mini-y-ticks"><path d="M18 22 H24 M18 32 H24 M18 42 H24 M18 52 H24 M18 62 H24"></path></g><path class="axis" d="M22 20 V62 H186"></path><text x="10" y="64">0</text><text x="10" y="54">1</text><text x="10" y="44">2</text><text x="10" y="34">3</text><text x="10" y="24">4</text><text x="21" y="76">1</text><text x="42" y="76">5</text><text x="67" y="76">10</text><text x="93" y="76">15</text><text x="119" y="76">20</text><text x="145" y="76">25</text><text x="171" y="76">30</text><text x="180" y="76">31</text></svg><svg class="mini-line blank-chart" viewBox="0 0 200 82" role="img" aria-label="Dressing prompt level mini line graph"><text class="mini-title" x="22" y="12">Dressing</text><g class="grid-lines"><path d="M22 22 H184 M22 32 H184 M22 42 H184 M22 52 H184 M22 62 H184"></path></g><g class="mini-day-ticks"><path d="M24.0 62 V67 M29.2 62 V67 M34.4 62 V67 M39.6 62 V67 M44.8 62 V67 M50.0 62 V67 M55.2 62 V67 M60.4 62 V67 M65.6 62 V67 M70.8 62 V67 M76.0 62 V67 M81.2 62 V67 M86.4 62 V67 M91.6 62 V67 M96.8 62 V67 M102.0 62 V67 M107.2 62 V67 M112.4 62 V67 M117.6 62 V67 M122.8 62 V67 M128.0 62 V67 M133.2 62 V67 M138.4 62 V67 M143.6 62 V67 M148.8 62 V67 M154.0 62 V67 M159.2 62 V67 M164.4 62 V67 M169.6 62 V67 M174.8 62 V67 M180.0 62 V67"></path></g><g class="mini-major-ticks"><path d="M24.0 59 V69 M44.8 59 V69 M96.8 59 V69 M148.8 59 V69 M180.0 59 V69"></path></g><g class="mini-y-ticks"><path d="M18 22 H24 M18 32 H24 M18 42 H24 M18 52 H24 M18 62 H24"></path></g><path class="axis" d="M22 20 V62 H186"></path><text x="10" y="64">0</text><text x="10" y="54">1</text><text x="10" y="44">2</text><text x="10" y="34">3</text><text x="10" y="24">4</text><text x="21" y="76">1</text><text x="42" y="76">5</text><text x="67" y="76">10</text><text x="93" y="76">15</text><text x="119" y="76">20</text><text x="145" y="76">25</text><text x="171" y="76">30</text><text x="180" y="76">31</text></svg></div></section>
+      <section class="analytics-panel wide adl-visual-panel"><h2>ADL Prompt Level Progress Over Time</h2>${adlMiniGridMarkup()}</section>
     </div>
   `
-);
+  );
+}
 
 
 function monthlyGoalsPage1Markup() {
@@ -842,6 +844,151 @@ function buildMonthPages(monthNumber, count) {
   return pages.join('');
 }
 
+const MONTHLY_OUTCOMES_HOW_TO_SAMPLE = 'Complete this dashboard at the end of each month. Review your Daily Caregiver Logs and use the daily summaries to calculate monthly totals and averages. Then fill in the metric boxes, charts, and Monthly Outcome Summary below.';
+
+const SAMPLE_MOOD_DAYS = [
+  ...Array(20).fill('mood-stable'),
+  ...Array(5).fill('mood-anxious'),
+  ...Array(3).fill('mood-elevated'),
+  ...Array(2).fill('mood-irritable'),
+  ...Array(1).fill('mood-dysregulated')
+];
+
+const SAMPLE_PARTICIPATION_HOURS = [18, 32, 14, 12, 22];
+const SAMPLE_PROMPT_LEVELS = [1, 2, 1, 1, 2, 1, 0, 1, 2, 2, 1, 3, 2, 1, 1, 2, 1, 1, 2, 2, 1, 2, 1, 1, 0, 1, 2, 1, 2, 1, 1];
+const SAMPLE_HYGIENE_LEVELS = [0, 0, 1, 0, 0, 1, 0, 0, 0, 1, 0, 0, 2, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0];
+const SAMPLE_DRESSING_LEVELS = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
+const SAMPLE_COOKING_LEVELS = [2, 2, 1, 2, 2, 2, 1, 2, 2, 2, 1, 2, 2, 2, 1, 2, 2, 2, 2, 1, 2, 2, 2, 1, 2, 2, 2, 2, 1, 2, 2];
+const SAMPLE_CLEANING_LEVELS = [1, 2, 2, 1, 2, 2, 2, 1, 2, 2, 2, 1, 2, 2, 2, 1, 2, 2, 2, 2, 1, 2, 2, 2, 1, 2, 2, 2, 2, 1, 2];
+const SAMPLE_COMMUNITY_LEVELS = [2, 2, 1, 2, 2, 1, 2, 2, 2, 1, 2, 2, 2, 1, 2, 2, 2, 1, 2, 2, 2, 2, 1, 2, 2, 2, 1, 2, 2, 2, 2];
+
+const ADL_MINI_CHART_TITLES = ['Hygiene', 'Dressing', 'Cooking', 'Cleaning', 'Community'];
+
+const MINI_LINE_GRID_MARKUP = `
+      <g class="grid-lines"><path d="M22 22 H184 M22 32 H184 M22 42 H184 M22 52 H184 M22 62 H184"></path></g>
+      <g class="mini-day-ticks"><path d="M24.0 62 V67 M29.2 62 V67 M34.4 62 V67 M39.6 62 V67 M44.8 62 V67 M50.0 62 V67 M55.2 62 V67 M60.4 62 V67 M65.6 62 V67 M70.8 62 V67 M76.0 62 V67 M81.2 62 V67 M86.4 62 V67 M91.6 62 V67 M96.8 62 V67 M102.0 62 V67 M107.2 62 V67 M112.4 62 V67 M117.6 62 V67 M122.8 62 V67 M128.0 62 V67 M133.2 62 V67 M138.4 62 V67 M143.6 62 V67 M148.8 62 V67 M154.0 62 V67 M159.2 62 V67 M164.4 62 V67 M169.6 62 V67 M174.8 62 V67 M180.0 62 V67"></path></g>
+      <g class="mini-major-ticks"><path d="M24.0 59 V69 M44.8 59 V69 M96.8 59 V69 M148.8 59 V69 M180.0 59 V69"></path></g>
+      <g class="mini-y-ticks"><path d="M18 22 H24 M18 32 H24 M18 42 H24 M18 52 H24 M18 62 H24"></path></g>
+      <path class="axis" d="M22 20 V62 H186"></path>
+      <text x="10" y="64">0</text><text x="10" y="54">1</text><text x="10" y="44">2</text><text x="10" y="34">3</text><text x="10" y="24">4</text>
+      <text x="21" y="76">1</text><text x="42" y="76">5</text><text x="67" y="76">10</text><text x="93" y="76">15</text><text x="119" y="76">20</text><text x="145" y="76">25</text><text x="171" y="76">30</text><text x="180" y="76">31</text>
+`;
+
+function moodWheelSliceMarkup(moods, cx = 100, cy = 100, radius = 78) {
+  return moods.map((mood, index) => {
+    const start = (index / moods.length) * Math.PI * 2 - Math.PI / 2;
+    const end = ((index + 1) / moods.length) * Math.PI * 2 - Math.PI / 2;
+    const x1 = cx + radius * Math.cos(start);
+    const y1 = cy + radius * Math.sin(start);
+    const x2 = cx + radius * Math.cos(end);
+    const y2 = cy + radius * Math.sin(end);
+    return `<path class="mood-slice ${mood}" d="M ${cx} ${cy} L ${x1.toFixed(2)} ${y1.toFixed(2)} A ${radius} ${radius} 0 0 1 ${x2.toFixed(2)} ${y2.toFixed(2)} Z"></path>`;
+  }).join('');
+}
+
+function participationBarMarkup(hours, maxHours = 40) {
+  const labels = [
+    ['Employment /', 'Vocational'],
+    ['Community', 'at Large'],
+    ['Home / Family', 'Community'],
+    ['Leisure /', 'Recreation'],
+    ['Activities of Daily', 'Living (ADLs)']
+  ];
+
+  return hours.map((value, index) => {
+    const height = Math.round((value / maxHours) * 100);
+    const [lineOne, lineTwo] = labels[index];
+    return `<div class="bar-column"><div class="bar-shell"><span class="bar-fill" style="height:${height}%"></span></div><b><span>${lineOne}</span><span>${lineTwo}</span></b></div>`;
+  }).join('');
+}
+
+function fullLineChartSampleMarkup(values, yForLevel = (level) => 123 - level * 25, startX = 55, stepX = 17) {
+  const points = values.map((value, index) => {
+    const x = startX + index * stepX;
+    const y = yForLevel(value);
+    return { x, y };
+  });
+  const pointMarkup = points.map(({ x, y }) => `<circle cx="${x}" cy="${y}" r="2.4"></circle>`).join('');
+  const polyline = points.map(({ x, y }) => `${x},${y}`).join(' ');
+  return `<g class="sample-points">${pointMarkup}</g><polyline class="sample-line" points="${polyline}"></polyline>`;
+}
+
+function miniLineChartBlankMarkup(title) {
+  return `
+    <svg class="mini-line blank-chart" viewBox="0 0 200 82" role="img" aria-label="${title} prompt level mini line graph">
+      <text class="mini-title" x="22" y="12">${title}</text>
+      ${MINI_LINE_GRID_MARKUP}
+    </svg>
+  `;
+}
+
+function miniLineChartSampleMarkup(values, title, yForLevel = (level) => 64 - level * 10, startX = 24, stepX = 5.2) {
+  const points = values.map((value, index) => {
+    const x = Number((startX + index * stepX).toFixed(1));
+    const y = yForLevel(value);
+    return { x, y };
+  });
+  const pointMarkup = points.map(({ x, y }) => `<circle cx="${x}" cy="${y}" r="1.6"></circle>`).join('');
+  const polyline = points.map(({ x, y }) => `${x},${y}`).join(' ');
+
+  return `
+    <svg class="mini-line sample-chart" viewBox="0 0 200 82" role="img" aria-label="${title} prompt level mini line graph">
+      <text class="mini-title" x="22" y="12">${title}</text>
+      ${MINI_LINE_GRID_MARKUP}
+      <g class="sample-points">${pointMarkup}</g>
+      <polyline class="sample-line" points="${polyline}"></polyline>
+    </svg>
+  `;
+}
+
+function adlMiniGridMarkup({ sample = false } = {}) {
+  const sampleData = {
+    Hygiene: SAMPLE_HYGIENE_LEVELS,
+    Dressing: SAMPLE_DRESSING_LEVELS,
+    Cooking: SAMPLE_COOKING_LEVELS,
+    Cleaning: SAMPLE_CLEANING_LEVELS,
+    Community: SAMPLE_COMMUNITY_LEVELS
+  };
+
+  const charts = ADL_MINI_CHART_TITLES.map((title) => (
+    sample
+      ? miniLineChartSampleMarkup(sampleData[title], title)
+      : miniLineChartBlankMarkup(title)
+  ));
+
+  return `<div class="adl-mini-grid">${charts.join('')}</div>`;
+}
+
+function sampleHealthCalendarCell(cell) {
+  if (cell === null || cell === '') {
+    return '<span></span>';
+  }
+  if (typeof cell === 'number') {
+    return `<span>${cell}</span>`;
+  }
+  const markerContent = cell.event === 'event-medication' ? '★' : '';
+  return `<span class="calendar-day has-health-event"><b>${cell.day}</b><i class="health-event-marker ${cell.event}" aria-hidden="true">${markerContent}</i></span>`;
+}
+
+function sampleHealthCalendarMarkup() {
+  const cells = [
+    null, null, null, 1, 2, 3, 4, 5, 6, 7,
+    { day: 8, event: 'event-illness' },
+    9, 10, 11,
+    { day: 12, event: 'event-appetite' },
+    13,
+    { day: 14, event: 'event-medication' },
+    15, 16, 17, 18, 19, 20,
+    { day: 21, event: 'event-prn' },
+    22, 23, 24, 25, 26, 27, 28, 29,
+    { day: 30, event: 'event-sleep' },
+    31,
+    null
+  ];
+
+  return `<div class="event-calendar sample-health-calendar"><b>Sun</b><b>Mon</b><b>Tue</b><b>Wed</b><b>Thu</b><b>Fri</b><b>Sat</b>${cells.map(sampleHealthCalendarCell).join('')}</div>`;
+}
+
 function sampleMonthlyOutcomesPage() {
   return articleMarkup(
     ['analytics-page', 'monthly-insights-page', 'sample-completed'],
@@ -850,7 +997,7 @@ function sampleMonthlyOutcomesPage() {
         <div><p>STAR Insights and Trends</p><h1>Monthly Outcomes Dashboard</h1></div>
         <span>Sample Completed</span>
       </header>
-      <section class="use-box compact-use"><h2>How to Use This Dashboard</h2><p>Use the Daily Caregiver Log to complete the blank charts by hand. Color one mood slice each day, fill monthly bars upward, and plot prompt-level dots daily.</p></section>
+      <section class="use-box compact-use"><h2>How to Use This Dashboard</h2><p>${MONTHLY_OUTCOMES_HOW_TO_SAMPLE}</p></section>
       <div class="analytics-fields three compact-fields"><label>Month <span>May 2026</span></label><label>Individual <span>Alex R.</span></label><label>Caregiver <span>Jordan M.</span></label></div>
       <section class="insight-metrics">
         <div class="metric-card"><b>Average Hours of Sleep</b><span>7.1</span><small>Source: Physical Health.</small></div>
@@ -869,7 +1016,7 @@ function sampleMonthlyOutcomesPage() {
           <label>Total Illness Days <span>3</span></label>
           <label>Aggression Days <span>2</span></label>
           <label>Medication Changes <span>1</span></label>
-          <label>General Observations <span>Prompt levels declined as sleep stabilized.</span></label>
+          <label class="summary-wide">General Observations <span>Prompt levels declined as sleep stabilized.</span></label>
         </div>
       </section>
 
@@ -877,8 +1024,9 @@ function sampleMonthlyOutcomesPage() {
         <section class="analytics-panel mood-wheel-panel">
           <h2>31-Day Mood Wheel</h2>
           <div class="wheel-layout">
-            <svg class="chart-svg mood-wheel" viewBox="0 0 200 200" role="img" aria-label="31 slice blank mood wheel">
+            <svg class="chart-svg mood-wheel sample-chart" viewBox="0 0 200 200" role="img" aria-label="31 slice sample mood wheel">
               <circle cx="100" cy="100" r="78"></circle>
+              ${moodWheelSliceMarkup(SAMPLE_MOOD_DAYS)}
               <line x1="100" y1="100" x2="100.00" y2="22.00"></line>
               <line x1="100" y1="100" x2="115.70" y2="23.60"></line>
               <line x1="100" y1="100" x2="130.76" y2="28.32"></line>
@@ -927,16 +1075,12 @@ function sampleMonthlyOutcomesPage() {
 
         <section class="analytics-panel participation-bars-panel">
           <h2>Participation Hours by Life Area</h2>
-          <div class="professional-bar-chart blank-chart" role="img" aria-label="Monthly participation hours bar chart">
+          <div class="professional-bar-chart sample-chart" role="img" aria-label="Monthly participation hours bar chart">
             <div class="bar-scale">
               <span>40</span><span>35</span><span>30</span><span>25</span><span>20</span><span>15</span><span>10</span><span>5</span><span>0</span>
             </div>
             <div class="bar-plot">
-              <div class="bar-column"><div class="bar-shell"></div><b><span>Employment /</span><span>Vocational</span></b></div>
-              <div class="bar-column"><div class="bar-shell"></div><b><span>Community</span><span>at Large</span></b></div>
-              <div class="bar-column"><div class="bar-shell"></div><b><span>Home / Family</span><span>Community</span></b></div>
-              <div class="bar-column"><div class="bar-shell"></div><b><span>Leisure /</span><span>Recreation</span></b></div>
-              <div class="bar-column"><div class="bar-shell"></div><b><span>Activities of Daily</span><span>Living (ADLs)</span></b></div>
+              ${participationBarMarkup(SAMPLE_PARTICIPATION_HOURS)}
             </div>
           </div>
           <p class="chart-note">Total or average monthly hours for each area. Color each blank bar upward to the number of hours.</p>
@@ -944,7 +1088,7 @@ function sampleMonthlyOutcomesPage() {
 
         <section class="analytics-panel wide prompt-line-panel">
           <h2>Average Participation Prompt Level Over Time</h2>
-          <svg class="chart-svg full-line-chart blank-chart" viewBox="0 0 620 150" role="img" aria-label="Average participation prompt level line graph">
+          <svg class="chart-svg full-line-chart sample-chart" viewBox="0 0 620 150" role="img" aria-label="Average participation prompt level line graph">
             <g class="grid-lines">
               <path d="M45 20 H590 M45 45 H590 M45 70 H590 M45 95 H590 M45 120 H590 M55 20 V120 M123 20 V120 M208 20 V120 M293 20 V120 M378 20 V120 M463 20 V120 M548 20 V120 M565 20 V120"></path>
             </g>
@@ -957,6 +1101,7 @@ function sampleMonthlyOutcomesPage() {
             </g>
             <text x="24" y="123">0</text><text x="24" y="98">1</text><text x="24" y="73">2</text><text x="24" y="48">3</text><text x="24" y="23">4</text>
             <text x="52" y="140">1</text><text x="118" y="140">5</text><text x="202" y="140">10</text><text x="287" y="140">15</text><text x="372" y="140">20</text><text x="458" y="140">25</text><text x="542" y="140">30</text><text x="560" y="140">31</text>
+            ${fullLineChartSampleMarkup(SAMPLE_PROMPT_LEVELS)}
           </svg>
           <p class="chart-note">Plot one dot each day using the average participation prompt level from the Daily Caregiver Log. Connect dots at the end of the month.</p>
         </section>
@@ -985,36 +1130,14 @@ function sampleHealthDashboardPage() {
         </section>
         <section class="analytics-panel health-calendar-panel wide">
           <h2>Health Event Calendar</h2>
-          <div class="event-calendar blank-health-calendar"><b>Sun</b><b>Mon</b><b>Tue</b><b>Wed</b><b>Thu</b><b>Fri</b><b>Sat</b><span></span><span></span><span></span><span>1</span><span>2</span><span>3</span><span>4</span><span>5</span><span>6</span><span>7</span><span>8 ●</span><span>9</span><span>10</span><span>11</span><span>12 ▲</span><span>13</span><span>14 ★</span><span>15</span><span>16</span><span>17</span><span>18</span><span>19</span><span>20</span><span>21 ◆</span><span>22</span><span>23</span><span>24</span><span>25</span><span>26</span><span>27</span><span>28</span><span>29</span><span>30 ■</span><span>31</span><span></span></div>
+          ${sampleHealthCalendarMarkup()}
           <div class="event-key"><span class="key-blue"></span> Illness <span class="key-purple"></span> PRN Given <span class="key-star">★</span> Medication Change <span class="key-yellow"></span> Change in Appetite <span class="key-green"></span> Night Waking / Difficulty Falling Asleep</div>
           <p class="chart-note">Write the dates into the blank calendar for the month. Mark health events on the correct date using the key.</p>
         </section>
 
         <section class="analytics-panel wide adl-visual-panel">
           <h2>ADL Prompt Level Progress Over Time</h2>
-          <div class="adl-mini-grid">
-            <svg class="mini-line blank-chart" viewBox="0 0 200 82" role="img" aria-label="Hygiene prompt level mini line graph">
-              <text class="mini-title" x="22" y="12">Hygiene</text>
-              <g class="grid-lines"><path d="M22 22 H184 M22 32 H184 M22 42 H184 M22 52 H184 M22 62 H184"></path></g>
-              <g class="mini-day-ticks"><path d="M24.0 62 V67 M29.2 62 V67 M34.4 62 V67 M39.6 62 V67 M44.8 62 V67 M50.0 62 V67 M55.2 62 V67 M60.4 62 V67 M65.6 62 V67 M70.8 62 V67 M76.0 62 V67 M81.2 62 V67 M86.4 62 V67 M91.6 62 V67 M96.8 62 V67 M102.0 62 V67 M107.2 62 V67 M112.4 62 V67 M117.6 62 V67 M122.8 62 V67 M128.0 62 V67 M133.2 62 V67 M138.4 62 V67 M143.6 62 V67 M148.8 62 V67 M154.0 62 V67 M159.2 62 V67 M164.4 62 V67 M169.6 62 V67 M174.8 62 V67 M180.0 62 V67"></path></g>
-              <g class="mini-major-ticks"><path d="M24.0 59 V69 M44.8 59 V69 M96.8 59 V69 M148.8 59 V69 M180.0 59 V69"></path></g>
-              <g class="mini-y-ticks"><path d="M18 22 H24 M18 32 H24 M18 42 H24 M18 52 H24 M18 62 H24"></path></g>
-              <path class="axis" d="M22 20 V62 H186"></path>
-              <text x="10" y="64">0</text><text x="10" y="54">1</text><text x="10" y="44">2</text><text x="10" y="34">3</text><text x="10" y="24">4</text>
-              <text x="21" y="76">1</text><text x="42" y="76">5</text><text x="67" y="76">10</text><text x="93" y="76">15</text><text x="119" y="76">20</text><text x="145" y="76">25</text><text x="171" y="76">30</text><text x="180" y="76">31</text>
-            </svg>
-
-            <svg class="mini-line blank-chart" viewBox="0 0 200 82" role="img" aria-label="Dressing prompt level mini line graph">
-              <text class="mini-title" x="22" y="12">Dressing</text>
-              <g class="grid-lines"><path d="M22 22 H184 M22 32 H184 M22 42 H184 M22 52 H184 M22 62 H184"></path></g>
-              <g class="mini-day-ticks"><path d="M24.0 62 V67 M29.2 62 V67 M34.4 62 V67 M39.6 62 V67 M44.8 62 V67 M50.0 62 V67 M55.2 62 V67 M60.4 62 V67 M65.6 62 V67 M70.8 62 V67 M76.0 62 V67 M81.2 62 V67 M86.4 62 V67 M91.6 62 V67 M96.8 62 V67 M102.0 62 V67 M107.2 62 V67 M112.4 62 V67 M117.6 62 V67 M122.8 62 V67 M128.0 62 V67 M133.2 62 V67 M138.4 62 V67 M143.6 62 V67 M148.8 62 V67 M154.0 62 V67 M159.2 62 V67 M164.4 62 V67 M169.6 62 V67 M174.8 62 V67 M180.0 62 V67"></path></g>
-              <g class="mini-major-ticks"><path d="M24.0 59 V69 M44.8 59 V69 M96.8 59 V69 M148.8 59 V69 M180.0 59 V69"></path></g>
-              <g class="mini-y-ticks"><path d="M18 22 H24 M18 32 H24 M18 42 H24 M18 52 H24 M18 62 H24"></path></g>
-              <path class="axis" d="M22 20 V62 H186"></path>
-              <text x="10" y="64">0</text><text x="10" y="54">1</text><text x="10" y="44">2</text><text x="10" y="34">3</text><text x="10" y="24">4</text>
-              <text x="21" y="76">1</text><text x="42" y="76">5</text><text x="67" y="76">10</text><text x="93" y="76">15</text><text x="119" y="76">20</text><text x="145" y="76">25</text><text x="171" y="76">30</text><text x="180" y="76">31</text>
-            </svg>
-          </div>
+          ${adlMiniGridMarkup({ sample: true })}
         </section>
       </div>
     `
@@ -1141,7 +1264,7 @@ months.forEach(({ monthNumber, startDay, endDay, logCount }) => {
   workbookPages.push(pageMarkup(
     `Month ${monthNumber} Health, Behavior & ADL Dashboard`,
     [],
-    healthDashboardBlank
+    healthDashboardBlankMarkup()
   ));
 });
 

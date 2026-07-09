@@ -1791,8 +1791,14 @@ em {
 }
 
 .executive-summary-panel {
-  margin-bottom: 0.06in;
+  margin-bottom: 0.08in;
   min-height: 0;
+}
+
+.monthly-insights-page .executive-summary-grid {
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.07in 0.12in;
+  padding: 0.1in 0.12in 0.11in;
 }
 
 .executive-summary-grid {
@@ -1800,6 +1806,34 @@ em {
   grid-template-columns: repeat(4, 1fr);
   gap: 0.04in 0.07in;
   padding: 0.05in 0.075in 0.055in;
+}
+
+.monthly-insights-page .executive-summary-grid label {
+  flex-direction: column;
+  align-items: stretch;
+  gap: 0.045in;
+  font-size: 8.4px;
+  line-height: 1.32;
+}
+
+.monthly-insights-page .executive-summary-grid label.summary-wide {
+  grid-column: 3 / span 2;
+}
+
+.monthly-insights-page .executive-summary-grid span {
+  width: 100%;
+  min-height: 0.2in;
+  height: auto;
+  flex: none;
+}
+
+.sample-completed .executive-summary-grid span {
+  display: block;
+  padding: 0.02in 0 0.04in;
+  border-bottom: 1px solid #bfc4bf;
+  font-size: 8.8px;
+  line-height: 1.35;
+  font-weight: 400;
 }
 
 .executive-summary-grid label {
@@ -2542,9 +2576,13 @@ em {
 
 .adl-mini-grid {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 0.035in 0.1in;
-  padding: 0.055in 0.11in 0.045in;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.04in 0.08in;
+  padding: 0.05in 0.1in 0.06in;
+}
+
+.monthly-patterns-page .adl-mini-grid .mini-line {
+  height: 0.92in;
 }
 
 .mini-line {
@@ -2864,6 +2902,77 @@ em {
 .key-yellow { background: #f1d77a; }
 .key-orange { background: #e8a052; }
 .key-red { background: #d67867; }
+
+/* Sample completed dashboard visuals */
+.sample-completed .use-box.compact-use p {
+  font-size: 9.4px;
+  line-height: 1.42;
+}
+  background: rgba(8, 82, 57, 0.42);
+  border-top: 1.5px solid #07583d;
+}
+
+.sample-completed .sample-health-calendar span {
+  min-height: 0.42in;
+  font-size: 9px;
+  font-weight: 700;
+}
+
+.sample-completed .sample-health-calendar .calendar-day {
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.04in 0.02in 0.05in;
+}
+
+.sample-completed .sample-health-calendar .calendar-day b {
+  min-height: auto;
+  border: 0;
+  background: transparent;
+  color: #173d31;
+  font-size: 9.4px;
+  font-weight: 700;
+  padding: 0;
+  text-transform: none;
+}
+
+.sample-completed .health-event-marker {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 0.2in;
+  height: 0.2in;
+  margin-top: 0.02in;
+  border-radius: 0.035in;
+  border: 1px solid rgba(23, 61, 49, 0.22);
+  font-size: 12px;
+  line-height: 1;
+  font-style: normal;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
+.sample-completed .health-event-marker.event-illness {
+  background: #7fb0d8;
+}
+
+.sample-completed .health-event-marker.event-prn {
+  background: #9a86c8;
+}
+
+.sample-completed .health-event-marker.event-medication {
+  background: #fff4d6;
+  color: #d69224;
+  border-color: #d69224;
+}
+
+.sample-completed .health-event-marker.event-appetite {
+  background: #f1d77a;
+}
+
+.sample-completed .health-event-marker.event-sleep {
+  background: #b8d8b1;
+}
 
 .adl-calendar-panel {
   margin-top: 0.1in;
