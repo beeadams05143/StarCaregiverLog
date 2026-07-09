@@ -1,0 +1,24 @@
+{
+  "name": "starcaregiverlog",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build:pdf": "node generate-kdp-pdf.mjs",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/beeadams05143/StarCaregiverLog.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/beeadams05143/StarCaregiverLog/issues"
+  },
+  "homepage": "https://github.com/beeadams05143/StarCaregiverLog#readme",
+  "devDependencies": {
+    "playwright": "^1.61.1"
+  }
+}

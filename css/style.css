@@ -1541,6 +1541,94 @@ em {
   border-bottom: 1px solid #ded5c4;
 }
 
+.monthly-goals-page-2 {
+  padding-bottom: 0.32in;
+}
+
+.monthly-goals-page-2 .star-title {
+  margin-bottom: 0.12in;
+}
+
+.monthly-goals-page-2 .goals-section {
+  margin-top: 0.1in;
+  padding: 0.08in 0.1in 0.1in;
+}
+
+.monthly-goals-page-2 .reflection-section {
+  margin-top: 0.08in;
+  padding: 0.08in 0.1in 0.1in;
+}
+
+.monthly-goals-page-2 .reflection-item {
+  margin: 0.07in 0;
+}
+
+.monthly-goals-page-2 .reflection-lines {
+  grid-template-rows: repeat(2, 0.18in);
+  gap: 0.03in;
+}
+
+/* Table of Contents */
+.toc-page {
+  padding: 0.36in 0.48in 0.32in;
+  font-size: 11px;
+  line-height: 1.45;
+  background:
+    radial-gradient(circle at 50% 8%, rgba(216, 179, 106, 0.1), transparent 2.4in),
+    linear-gradient(180deg, #fffdf7 0%, #fff8ec 100%);
+}
+
+.toc-page .star-title {
+  margin-bottom: 0.2in;
+}
+
+.toc-page .star-title h1 {
+  font-size: 34px;
+  margin: 0.08in 0 0;
+}
+
+.toc-list {
+  display: grid;
+  gap: 0.06in;
+}
+
+.toc-entry {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: end;
+  gap: 0.08in;
+  color: #173d31;
+}
+
+.toc-entry.toc-subentry {
+  padding-left: 0.22in;
+}
+
+.toc-title {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 12px;
+  color: #103d2e;
+  white-space: nowrap;
+}
+
+.toc-subentry .toc-title {
+  font-size: 11px;
+  color: #173d31;
+}
+
+.toc-leader {
+  border-bottom: 1px dotted #d8c4a0;
+  margin-bottom: 0.03in;
+}
+
+.toc-page-num {
+  min-width: 0.22in;
+  text-align: right;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 12px;
+  color: #5e5134;
+}
+
 .analytics-page {
   padding: 0.24in;
   font-size: 10.6px;
@@ -2921,6 +3009,32 @@ em {
   .page .monthly-goals-page {
     width: calc(100% - 0.06in);
     height: calc(100% - 0.06in);
+  }
+
+  .monthly-goals-page-2 {
+    padding: 0.3in 0.36in 0.34in;
+  }
+
+  .monthly-goals-page-2 .star-title {
+    margin-bottom: 0.08in;
+  }
+
+  .monthly-goals-page-2 .star-title h1 {
+    font-size: 34px;
+  }
+
+  .monthly-goals-page-2 .goals-section,
+  .monthly-goals-page-2 .reflection-section {
+    margin-top: 0.07in;
+    padding: 0.06in 0.08in 0.08in;
+  }
+
+  .monthly-goals-page-2 .reflection-item {
+    margin: 0.05in 0;
+  }
+
+  .toc-page {
+    padding: 0.28in 0.36in 0.26in;
   }
 
   .log-footer {

@@ -447,22 +447,18 @@ const blankLogLeft = articleMarkup(
 );
 
 const blankLogRight = articleMarkup(
-  ['log-page', 'right-log', 'blank-log'],
+  ['log-page', 'right-log'],
   `
     <section class="form-section participation-section">
       <h3>Participation &amp; Independence</h3>
       <p class="subhead">Activities, Community &amp; Daily Living</p>
-      <div class="today-focus blank-focus">
+      <div class="today-focus">
         <b>Today's focus goal(s)</b>
         <label><span class="box"></span> Employment / Vocational</label>
         <label><span class="box"></span> Community at Large</label>
         <label><span class="box"></span> Home / Family Community</label>
         <label><span class="box"></span> Leisure / Recreation</label>
         <label><span class="box"></span> Activities of Daily Living (ADLs)</label>
-        <label><span class="box"></span> Exercise</label>
-        <label><span class="box"></span> Safety</label>
-        <label><span class="box"></span> Behavior</label>
-        <label><span class="box"></span> Other <span class="short-line"></span></label>
       </div>
     </section>
 
@@ -470,10 +466,10 @@ const blankLogRight = articleMarkup(
       <h3>Participation Hours &amp; Prompt Levels</h3>
       <table class="log-table participation-table">
         <tr><th>Area</th><th>Participated?</th><th>Hours</th><th>Prompt Level (0-4)</th><th>Notes</th></tr>
-        <tr><td>Employment / Vocational</td><td>Yes No</td><td><div class="writing-line"></div></td><td>0 1 2 3 4</td><td></td></tr>
-        <tr><td>Community at Large</td><td>Yes No</td><td><div class="writing-line"></div></td><td>0 1 2 3 4</td><td></td></tr>
-        <tr><td>Home / Family Community</td><td>Yes No</td><td><div class="writing-line"></div></td><td>0 1 2 3 4</td><td></td></tr>
-        <tr><td>Leisure / Recreation</td><td>Yes No</td><td><div class="writing-line"></div></td><td>0 1 2 3 4</td><td></td></tr>
+        <tr><td>Employment / Vocational</td><td>Yes No</td><td></td><td>0 1 2 3 4</td><td></td></tr>
+        <tr><td>Community at Large</td><td>Yes No</td><td></td><td>0 1 2 3 4</td><td></td></tr>
+        <tr><td>Home / Family Community</td><td>Yes No</td><td></td><td>0 1 2 3 4</td><td></td></tr>
+        <tr><td>Leisure / Recreation</td><td>Yes No</td><td></td><td>0 1 2 3 4</td><td></td></tr>
       </table>
       <p class="prompt-key">Prompt Level Key: 0 - Independent · 1 - 1-2 prompts · 2 - Periodic prompts · 3 - Frequent prompts · 4 - Dependent</p>
       <div class="daily-summary participation-summary">
@@ -568,49 +564,13 @@ const healthDashboardBlank = articleMarkup(
   `
     <header class="analytics-header"><div><p>STAR Insights and Trends</p><h1>Health, Behavior &amp; ADL Dashboard</h1></div><span>Blank Printable</span></header>
     <div class="patterns-grid refined-patterns">
-      <section class="analytics-panel sleep-panel wide"><h2>Hours of Sleep Over Time</h2><svg class="chart-svg full-line-chart blank-chart" viewBox="0 0 620 150" role="img" aria-label="Hours of sleep line graph"><g class="grid-lines"><path d="M45 20 H590 M45 45 H590 M45 70 H590 M45 95 H590 M45 120 H590 M55 20 V120 M123 20 V120 M208 20 V120 M293 20 V120 M378 20 V120 M463 20 V120 M548 20 V120 M565 20 V120"></path></g><path class="axis" d="M45 18 V122 H592"></path><g class="day-ticks"><path d="M55 120 V126 M72 120 V126 M89 120 V126 M106 120 V126 M123 120 V126 M140 120 V126 M157 120 V126 M174 120 V126 M191 120 V126 M208 120 V126 M225 120 V126 M242 120 V126 M259 120 V126 M276 120 V126 M293 120 V126 M310 120 V126 M327 120 V126 M344 120 V126 M361 120 V126 M378 120 V126 M395 120 V126 M412 120 V126 M429 120 V126 M446 120 V126 M463 120 V126 M480 120 V126 M497 120 V126 M514 120 V126 M531 120 V126 M548 120 V126 M565 120 V126"></path></g><g class="major-day-ticks"><path d="M55 118 V128 M123 118 V128 M208 118 V128 M293 118 V128 M378 118 V128 M463 118 V128 M548 118 V128 M565 118 V128"></path></g><text x="24" y="123">4</text><text x="24" y="98">6</text><text x="24" y="73">8</text><text x="20" y="48">10</text><text x="20" y="23">12</text><text x="52" y="140">1</text><text x="118" y="140">5</text><text x="202" y="140">10</text><text x="287" y="140">15</text><text x="372" y="140">20</text><text x="458" y="140">25</text><text x="542" y="140">30</text><text x="560" y="140">31</text><polyline class="sample-line sleep-line" points="55,80 72,80 89,58 106,70 123,92 140,80 157,70 174,86 191,58 208,74 225,58 242,82 259,48 276,74 293,58 310,52 327,64 344,46 361,68 378,54 395,62 412,48 429,58 446,54 463,44 480,58 497,52 514,50 531,48 548,46 565,44"></polyline></svg><p class="chart-note">Plot one dot each day using Hours of Sleep from the Physical Health section. Connect dots at the end of the month.</p></section>
+      <section class="analytics-panel sleep-panel wide"><h2>Hours of Sleep Over Time</h2><svg class="chart-svg full-line-chart blank-chart" viewBox="0 0 620 150" role="img" aria-label="Hours of sleep line graph"><g class="grid-lines"><path d="M45 20 H590 M45 45 H590 M45 70 H590 M45 95 H590 M45 120 H590 M55 20 V120 M123 20 V120 M208 20 V120 M293 20 V120 M378 20 V120 M463 20 V120 M548 20 V120 M565 20 V120"></path></g><path class="axis" d="M45 18 V122 H592"></path><g class="day-ticks"><path d="M55 120 V126 M72 120 V126 M89 120 V126 M106 120 V126 M123 120 V126 M140 120 V126 M157 120 V126 M174 120 V126 M191 120 V126 M208 120 V126 M225 120 V126 M242 120 V126 M259 120 V126 M276 120 V126 M293 120 V126 M310 120 V126 M327 120 V126 M344 120 V126 M361 120 V126 M378 120 V126 M395 120 V126 M412 120 V126 M429 120 V126 M446 120 V126 M463 120 V126 M480 120 V126 M497 120 V126 M514 120 V126 M531 120 V126 M548 120 V126 M565 120 V126"></path></g><g class="major-day-ticks"><path d="M55 118 V128 M123 118 V128 M208 118 V128 M293 118 V128 M378 118 V128 M463 118 V128 M548 118 V128 M565 118 V128"></path></g><text x="24" y="123">4</text><text x="24" y="98">6</text><text x="24" y="73">8</text><text x="20" y="48">10</text><text x="20" y="23">12</text><text x="52" y="140">1</text><text x="118" y="140">5</text><text x="202" y="140">10</text><text x="287" y="140">15</text><text x="372" y="140">20</text><text x="458" y="140">25</text><text x="542" y="140">30</text><text x="560" y="140">31</text></svg><p class="chart-note">Plot one dot each day using Hours of Sleep from the Physical Health section. Connect dots at the end of the month.</p></section>
       <section class="analytics-panel health-calendar-panel wide"><h2>Health Event Calendar</h2><div class="event-calendar blank-health-calendar"><b>Sun</b><b>Mon</b><b>Tue</b><b>Wed</b><b>Thu</b><b>Fri</b><b>Sat</b><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div><div class="event-key"><span class="key-blue"></span> Illness <span class="key-purple"></span> PRN Given <span class="key-star">★</span> Medication Change <span class="key-yellow"></span> Change in Appetite <span class="key-green"></span> Night Waking / Difficulty Falling Asleep</div><p class="chart-note">Write the dates into the blank calendar for the month. Mark health events on the correct date using the key.</p></section>
       <section class="analytics-panel wide adl-visual-panel"><h2>ADL Prompt Level Progress Over Time</h2><div class="adl-mini-grid"><svg class="mini-line blank-chart" viewBox="0 0 200 82" role="img" aria-label="Hygiene prompt level mini line graph"><text class="mini-title" x="22" y="12">Hygiene</text><g class="grid-lines"><path d="M22 22 H184 M22 32 H184 M22 42 H184 M22 52 H184 M22 62 H184"></path></g><g class="mini-day-ticks"><path d="M24.0 62 V67 M29.2 62 V67 M34.4 62 V67 M39.6 62 V67 M44.8 62 V67 M50.0 62 V67 M55.2 62 V67 M60.4 62 V67 M65.6 62 V67 M70.8 62 V67 M76.0 62 V67 M81.2 62 V67 M86.4 62 V67 M91.6 62 V67 M96.8 62 V67 M102.0 62 V67 M107.2 62 V67 M112.4 62 V67 M117.6 62 V67 M122.8 62 V67 M128.0 62 V67 M133.2 62 V67 M138.4 62 V67 M143.6 62 V67 M148.8 62 V67 M154.0 62 V67 M159.2 62 V67 M164.4 62 V67 M169.6 62 V67 M174.8 62 V67 M180.0 62 V67"></path></g><g class="mini-major-ticks"><path d="M24.0 59 V69 M44.8 59 V69 M96.8 59 V69 M148.8 59 V69 M180.0 59 V69"></path></g><g class="mini-y-ticks"><path d="M18 22 H24 M18 32 H24 M18 42 H24 M18 52 H24 M18 62 H24"></path></g><path class="axis" d="M22 20 V62 H186"></path><text x="10" y="64">0</text><text x="10" y="54">1</text><text x="10" y="44">2</text><text x="10" y="34">3</text><text x="10" y="24">4</text><text x="21" y="76">1</text><text x="42" y="76">5</text><text x="67" y="76">10</text><text x="93" y="76">15</text><text x="119" y="76">20</text><text x="145" y="76">25</text><text x="171" y="76">30</text><text x="180" y="76">31</text></svg><svg class="mini-line blank-chart" viewBox="0 0 200 82" role="img" aria-label="Dressing prompt level mini line graph"><text class="mini-title" x="22" y="12">Dressing</text><g class="grid-lines"><path d="M22 22 H184 M22 32 H184 M22 42 H184 M22 52 H184 M22 62 H184"></path></g><g class="mini-day-ticks"><path d="M24.0 62 V67 M29.2 62 V67 M34.4 62 V67 M39.6 62 V67 M44.8 62 V67 M50.0 62 V67 M55.2 62 V67 M60.4 62 V67 M65.6 62 V67 M70.8 62 V67 M76.0 62 V67 M81.2 62 V67 M86.4 62 V67 M91.6 62 V67 M96.8 62 V67 M102.0 62 V67 M107.2 62 V67 M112.4 62 V67 M117.6 62 V67 M122.8 62 V67 M128.0 62 V67 M133.2 62 V67 M138.4 62 V67 M143.6 62 V67 M148.8 62 V67 M154.0 62 V67 M159.2 62 V67 M164.4 62 V67 M169.6 62 V67 M174.8 62 V67 M180.0 62 V67"></path></g><g class="mini-major-ticks"><path d="M24.0 59 V69 M44.8 59 V69 M96.8 59 V69 M148.8 59 V69 M180.0 59 V69"></path></g><g class="mini-y-ticks"><path d="M18 22 H24 M18 32 H24 M18 42 H24 M18 52 H24 M18 62 H24"></path></g><path class="axis" d="M22 20 V62 H186"></path><text x="10" y="64">0</text><text x="10" y="54">1</text><text x="10" y="44">2</text><text x="10" y="34">3</text><text x="10" y="24">4</text><text x="21" y="76">1</text><text x="42" y="76">5</text><text x="67" y="76">10</text><text x="93" y="76">15</text><text x="119" y="76">20</text><text x="145" y="76">25</text><text x="171" y="76">30</text><text x="180" y="76">31</text></svg></div></section>
     </div>
   `
 );
 
-function extractArticleInner(articleHtml) {
-  // Extract the content inside the article wrapper added by articleMarkup().
-  return articleHtml.replace(/^<article[^>]*>/, '').replace(/<\/article>\s*$/, '');
-}
-
-function stripFirstAnalyticsHeader(innerHtml) {
-  // Remove the first <header>...</header> block (the dashboard title header).
-  return innerHtml.replace(/<header[^>]*>[\s\S]*?<\/header>/, '');
-}
-
-const monthlyAndHealthCombinedBlank = articleMarkup(
-  [
-    'analytics-page',
-    'combined-dashboards-page',
-    'monthly-insights-page',
-    'monthly-patterns-page',
-    'blank-template'
-  ],
-  `
-    <header class="analytics-header">
-      <div><p>STAR Insights and Trends</p><h1>Monthly Outcomes Dashboard</h1></div>
-      <span>Blank Printable</span>
-    </header>
-
-    <div class="combined-columns">
-      <div class="combined-col combined-outcomes">
-      ${stripFirstAnalyticsHeader(extractArticleInner(monthlyOutcomesBlank))}
-      </div>
-
-      <div class="combined-col combined-health">
-        <div class="combined-section-title">Health, Behavior &amp; ADL Dashboard</div>
-      ${stripFirstAnalyticsHeader(extractArticleInner(healthDashboardBlank))}
-      </div>
-    </div>
-  `
-);
 
 function monthlyGoalsPage1Markup() {
   return articleMarkup(
@@ -700,7 +660,7 @@ function monthlyGoalsPage1Markup() {
 
 function monthlyGoalsPage2Markup() {
   return articleMarkup(
-    ['monthly-goals-page'],
+    ['monthly-goals-page', 'monthly-goals-page-2'],
     `
       <header class="star-title">
         <div class="star-mark">☆</div>
@@ -1061,6 +1021,85 @@ function sampleHealthDashboardPage() {
   );
 }
 
+function tableOfContentsMarkup(monthList) {
+  return articleMarkup(
+    ['toc-page'],
+    `
+      <header class="star-title">
+        <div class="star-mark">☆</div>
+        <p>STAR</p>
+        <span>Support Tool for Autonomy and Reflection</span>
+        <h1>Table of Contents</h1>
+      </header>
+
+      <nav class="toc-list" aria-label="Table of Contents">
+        <div class="toc-entry" data-page-label="About This Workbook">
+          <span class="toc-title">How to Use This Workbook</span>
+          <span class="toc-leader" aria-hidden="true"></span>
+          <span class="toc-page-num"></span>
+        </div>
+        <div class="toc-entry" data-page-label="Quick Reference Guide">
+          <span class="toc-title">Quick Reference Guide</span>
+          <span class="toc-leader" aria-hidden="true"></span>
+          <span class="toc-page-num"></span>
+        </div>
+        ${monthList.map(({ monthNumber }) => `
+        <div class="toc-entry" data-page-label="Month ${monthNumber} divider">
+          <span class="toc-title">Month ${monthNumber}</span>
+          <span class="toc-leader" aria-hidden="true"></span>
+          <span class="toc-page-num"></span>
+        </div>
+        <div class="toc-entry toc-subentry" data-page-label="Month ${monthNumber} Goals &amp; Focus - Page 1">
+          <span class="toc-title">Monthly Goals &amp; Focus</span>
+          <span class="toc-leader" aria-hidden="true"></span>
+          <span class="toc-page-num"></span>
+        </div>
+        <div class="toc-entry toc-subentry" data-page-label="Month ${monthNumber} Daily Caregiver Logs">
+          <span class="toc-title">Daily Caregiver Logs</span>
+          <span class="toc-leader" aria-hidden="true"></span>
+          <span class="toc-page-num"></span>
+        </div>
+        <div class="toc-entry toc-subentry" data-page-label="Month ${monthNumber} Monthly Outcomes Dashboard">
+          <span class="toc-title">Monthly Outcomes Dashboard</span>
+          <span class="toc-leader" aria-hidden="true"></span>
+          <span class="toc-page-num"></span>
+        </div>
+        <div class="toc-entry toc-subentry" data-page-label="Month ${monthNumber} Health, Behavior &amp; ADL Dashboard">
+          <span class="toc-title">Health, Behavior &amp; ADL Dashboard</span>
+          <span class="toc-leader" aria-hidden="true"></span>
+          <span class="toc-page-num"></span>
+        </div>`).join('')}
+        <div class="toc-entry" data-page-label="Your Journey Continues">
+          <span class="toc-title">Author Page</span>
+          <span class="toc-leader" aria-hidden="true"></span>
+          <span class="toc-page-num"></span>
+        </div>
+      </nav>
+    `
+  );
+}
+
+function numberWorkbookPages() {
+  let pageNumber = 0;
+  document.querySelectorAll('.page').forEach((page) => {
+    const numberNode = page.querySelector('.page-number');
+    if (!numberNode || page.classList.contains('cover-page')) {
+      return;
+    }
+    pageNumber += 1;
+    numberNode.textContent = pageNumber;
+  });
+}
+
+function populateTableOfContents() {
+  document.querySelectorAll('.toc-entry[data-page-label]').forEach((entry) => {
+    const label = entry.getAttribute('data-page-label');
+    const page = document.querySelector(`.page[aria-label="${label}"]`);
+    const pageNum = page?.querySelector('.page-number')?.textContent || '';
+    entry.querySelector('.toc-page-num').textContent = pageNum;
+  });
+}
+
 const workbookPages = [
   pageMarkup('Cover', ['cover-page'], '<img src="images/cover.jpeg" alt="STAR Daily Caregiver Log cover">', false),
   pageMarkup('About This Workbook', [], aboutPage),
@@ -1088,31 +1127,29 @@ months.forEach(({ monthNumber, startDay, endDay, logCount }) => {
   workbookPages.push(pageMarkup(`Month ${monthNumber} Goals & Focus - Page 1`, [], monthlyGoalsPage1Markup()));
   workbookPages.push(pageMarkup(`Month ${monthNumber} Goals & Focus - Page 2`, [], monthlyGoalsPage2Markup()));
   for (let index = 0; index < logCount; index += 1) {
-    workbookPages.push(pageMarkup('Daily Caregiver Log left page', ['daily-log-page'], blankLogLeft));
+    const logLeftLabel = index === 0
+      ? `Month ${monthNumber} Daily Caregiver Logs`
+      : 'Daily Caregiver Log left page';
+    workbookPages.push(pageMarkup(logLeftLabel, ['daily-log-page'], blankLogLeft));
     workbookPages.push(pageMarkup('Daily Caregiver Log right page', ['daily-log-page'], blankLogRight));
   }
   workbookPages.push(pageMarkup(
-    `Month ${monthNumber} Monthly Outcomes & Health/Behavior/ADL Dashboard`,
+    `Month ${monthNumber} Monthly Outcomes Dashboard`,
     [],
-    monthlyAndHealthCombinedBlank
+    monthlyOutcomesBlank
+  ));
+  workbookPages.push(pageMarkup(
+    `Month ${monthNumber} Health, Behavior & ADL Dashboard`,
+    [],
+    healthDashboardBlank
   ));
 });
 
 workbookPages.push(pageMarkup('Your Journey Continues', [], authorNotePageMarkup()));
 
+const tocPage = pageMarkup('Table of Contents', [], tableOfContentsMarkup(months));
+workbookPages.splice(3, 0, tocPage);
+
 workbook.innerHTML = workbookPages.join('');
-
-let pageNumber = 0;
-document.querySelectorAll('.page').forEach((page) => {
-  const numberNode = page.querySelector('.page-number');
-  if (!numberNode) {
-    return;
-  }
-
-  if (page.classList.contains('cover-page')) {
-    return;
-  }
-
-  pageNumber += 1;
-  numberNode.textContent = pageNumber;
-});
+numberWorkbookPages();
+populateTableOfContents();
