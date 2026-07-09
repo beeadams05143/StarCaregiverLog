@@ -1,6 +1,17 @@
 @page {
-  size: Letter portrait;
-  margin: 0.5in;
+  size: 8.5in 11in;
+}
+
+/* Mirrored margins (inside gutter wider than outside) for facing pages. */
+/* 391 interior pages: KDP requires 0.625in inside margin (301-500 page range). */
+@page :left {
+  /* top right bottom left */
+  /* inside gutter = right edge (spine side) for left pages */
+  margin: 0.25in 0.625in 0.25in 0.25in;
+}
+
+@page :right {
+  margin: 0.25in 0.25in 0.25in 0.625in;
 }
 
 html,
@@ -165,7 +176,7 @@ main {
 .page-content {
   width: 100%;
   height: 100%;
-  padding: 0.45in;
+  padding: 0.40in;
   position: relative;
   color: #173d31;
   background: #fffaf0;
@@ -1241,6 +1252,160 @@ em {
   word-spacing: 0.035in;
 }
 
+/* Author Note — Your Journey Continues */
+.author-note-page {
+  padding: 0.28in 0.42in 0.22in;
+  background:
+    radial-gradient(circle at 50% 6%, rgba(216, 179, 106, 0.1), transparent 2.4in),
+    linear-gradient(180deg, #fffdf7 0%, #fff8ec 100%);
+  font-size: 10.6px;
+  line-height: 1.42;
+  color: #173d31;
+}
+
+.author-note-header {
+  margin-bottom: 0.08in;
+}
+
+.author-note-header.star-title .star-mark {
+  font-size: 28px;
+}
+
+.author-note-header.star-title p {
+  font-size: 40px;
+  line-height: 1;
+}
+
+.author-note-header .title-rule {
+  margin-top: 0.05in;
+}
+
+.author-note-header h1 {
+  margin: 0.05in 0 0;
+  font-size: 30px;
+  line-height: 1.05;
+}
+
+.author-note-body p {
+  margin: 0 0 0.08in;
+}
+
+.author-note-highlight {
+  margin: 0.08in 0 0.1in;
+  padding: 0.1in 0.14in;
+  text-align: center;
+  border: 1px solid #e1bf80;
+  border-radius: 0.06in;
+  background: rgba(255, 250, 241, 0.82);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 13px;
+  line-height: 1.42;
+  color: #103d2e;
+}
+
+.author-note-highlight strong {
+  display: block;
+  font-size: 17px;
+  font-weight: 700;
+  color: #06422c;
+  margin-bottom: 0.02in;
+}
+
+.author-note-signoff {
+  margin: 0.04in 0 0.05in;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 12px;
+  font-style: italic;
+  color: #5e5134;
+}
+
+.author-note-body .author-identity {
+  margin-bottom: 0.1in;
+}
+
+.author-note-footer {
+  margin-top: 0.06in;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 0.14in;
+}
+
+.author-photo-frame {
+  width: 0.85in;
+  height: 0.85in;
+  position: relative;
+  border: 1px solid #d8c4a0;
+  border-radius: 0.04in;
+  background: #fffaf1;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.author-photo-frame img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  z-index: 1;
+}
+
+.author-photo-fallback {
+  position: relative;
+  z-index: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  padding: 0.05in;
+  color: #8a7d68;
+  font-size: 8px;
+  line-height: 1.25;
+  text-align: center;
+  background: #fffaf1;
+}
+
+.author-photo-frame img[src]:not([src=""]) {
+  position: relative;
+  z-index: 1;
+}
+
+.author-identity strong {
+  display: block;
+  margin-top: 0;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 13px;
+  color: #103d2e;
+}
+
+.author-identity span {
+  display: block;
+  font-size: 8.5px;
+  line-height: 1.32;
+  color: #5e5134;
+}
+
+.author-qr-frame {
+  width: 0.68in;
+  height: 0.68in;
+  border: 1px dashed #c9b994;
+  border-radius: 0.03in;
+  background: rgba(255, 250, 241, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #8a7d68;
+  font-size: 6.5px;
+  line-height: 1.25;
+  text-align: center;
+  padding: 0.03in;
+}
+
 /* Monthly Goals & Focus Page */
 .monthly-goals-page {
   padding: 0.36in 0.4in 0.28in;
@@ -1377,9 +1542,9 @@ em {
 }
 
 .analytics-page {
-  padding: 0.26in;
-  font-size: 10.4px;
-  line-height: 1.24;
+  padding: 0.24in;
+  font-size: 10.6px;
+  line-height: 1.26;
   background:
     radial-gradient(circle at 50% 7%, rgba(216, 179, 106, 0.08), transparent 2.15in),
     linear-gradient(180deg, #fffdf7 0%, #fff8ec 100%);
@@ -1759,21 +1924,21 @@ em {
 .chart-svg {
   display: block;
   width: 100%;
-  height: 1.32in;
-  padding: 0.045in 0.055in 0.02in;
+  height: 1.42in;
+  padding: 0.04in 0.05in 0.015in;
 }
 
 .tall-chart {
-  height: 1.45in;
+  height: 1.56in;
 }
 
 .daily-grid,
 .sleep-chart {
-  height: 1.35in;
+  height: 1.48in;
 }
 
 .chart-svg.adl-calendar {
-  height: 1.5in;
+  height: 1.65in;
 }
 
 .med-timeline {
@@ -1820,7 +1985,7 @@ em {
 
 .bar-chart,
 .line-chart {
-  height: 1.72in;
+  height: 1.86in;
 }
 
 .professional-bar-chart {
@@ -1828,12 +1993,12 @@ em {
   grid-template-columns: 0.32in minmax(0, 1fr);
   gap: 0.08in;
   width: calc(100% - 0.16in);
-  margin: 0.08in auto 0.04in;
+  margin: 0.06in auto 0.02in;
   padding: 0 0.02in;
 }
 
 .bar-scale {
-  height: 1.56in;
+  height: 1.72in;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -1862,7 +2027,7 @@ em {
 
 .bar-shell {
   width: 0.46in;
-  height: 1.56in;
+  height: 1.72in;
   position: relative;
   display: flex;
   align-items: flex-end;
@@ -1914,7 +2079,7 @@ em {
 }
 
 .full-line-chart {
-  height: 1.62in;
+  height: 1.78in;
 }
 
 .chart-svg .day-ticks path {
@@ -2003,7 +2168,7 @@ em {
 }
 
 .mood-wheel {
-  height: 1.85in;
+  height: 2.05in;
 }
 
 .mood-wheel circle {
@@ -2296,7 +2461,7 @@ em {
 
 .mini-line {
   width: 100%;
-  height: 1.03in;
+  height: 1.12in;
 }
 
 .mini-line path {
@@ -2497,9 +2662,98 @@ em {
 }
 
 .chart-note {
-  padding: 0.055in 0.08in 0.075in;
+  padding: 0.04in 0.07in 0.055in;
   border-top: 1px solid #eee2cc;
   background: rgba(255, 250, 241, 0.48);
+}
+
+/* Combined dashboard page (Monthly Outcomes + Health/Behavior/ADL). */
+.combined-dashboards-page {
+  padding: 0.1in;
+}
+
+.combined-columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.06in;
+}
+
+.combined-col {
+  min-width: 0;
+}
+
+.combined-dashboards-page .insights-grid,
+.combined-dashboards-page .patterns-grid {
+  gap: 0.06in;
+}
+
+.combined-dashboards-page .insight-metrics .metric-card {
+  min-height: 0.5in;
+  padding: 0.04in;
+}
+
+.combined-dashboards-page .mood-wheel {
+  height: 1.8in;
+}
+
+.combined-dashboards-page .full-line-chart {
+  height: 1.55in;
+}
+
+.combined-dashboards-page .bar-scale {
+  height: 1.55in;
+}
+
+.combined-dashboards-page .bar-shell {
+  height: 1.55in;
+}
+
+.combined-dashboards-page .mini-line {
+  height: 1.0in;
+}
+
+.combined-dashboards-page .event-calendar b,
+.combined-dashboards-page .event-calendar span {
+  min-height: 0.2in;
+}
+
+.combined-dashboards-page .insights-grid .analytics-panel,
+.combined-dashboards-page .patterns-grid .analytics-panel {
+  min-height: 1.18in;
+}
+
+.combined-section-title {
+  margin: 0.09in 0 0.04in;
+  padding: 0.03in 0.07in;
+  color: #fffaf1;
+  background: linear-gradient(90deg, #06422c, #07583d);
+  border-radius: 0.04in;
+  font-size: 9.2px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.combined-dashboards-page .analytics-header {
+  padding-bottom: 0.06in;
+  gap: 0.12in;
+}
+
+.combined-dashboards-page .analytics-header h1 {
+  font-size: 22px;
+}
+
+.combined-dashboards-page .analytics-panel h2 {
+  padding: 0.03in 0.07in;
+  font-size: 9.1px;
+}
+
+.combined-dashboards-page .use-box.compact-use {
+  margin: 0.04in 0 0.05in;
+  padding: 0.04in 0.07in;
+}
+
+.combined-dashboards-page .use-box h2 {
+  margin: 0 0 0.02in;
 }
 
 .color-key {
@@ -2588,14 +2842,14 @@ em {
   }
 
   main {
-    width: 7.5in;
+    width: 7.625in;
     margin: 0 auto;
   }
 
   .page {
-    width: 7.5in;
-    height: 10in;
-    margin: 0 auto 0.35in;
+    width: 7.625in;
+    height: 10.5in;
+    margin: 0 auto;
     box-shadow: none;
   }
 
@@ -2605,11 +2859,29 @@ em {
   }
 
   .page-content {
-    padding: 0.3in;
+    padding: 0.25in;
   }
 
   .about-page {
-    padding: 0.28in 0.36in;
+    padding: 0.25in 0.32in;
+  }
+
+  .author-note-page {
+    padding: 0.22in 0.3in 0.18in;
+    font-size: 10.2px;
+    line-height: 1.38;
+  }
+
+  .author-note-header.star-title p {
+    font-size: 36px;
+  }
+
+  .author-note-header h1 {
+    font-size: 26px;
+  }
+
+  .author-note-body p {
+    margin-bottom: 0.065in;
   }
 
   .log-page {
@@ -2617,7 +2889,38 @@ em {
   }
 
   .analytics-page {
-    padding: 0.22in;
+    padding: 0.19in;
+  }
+
+  .monthly-insights-page,
+  .monthly-patterns-page {
+    padding: 0.14in;
+  }
+
+  /* Scale monthly dashboard content to fill more printable area */
+  .monthly-insights-page .insights-grid,
+  .monthly-patterns-page .patterns-grid {
+    gap: 0.05in;
+  }
+
+  .monthly-insights-page .full-line-chart,
+  .monthly-patterns-page .full-line-chart {
+    height: 1.88in;
+  }
+
+  .monthly-insights-page .mood-wheel {
+    height: 2.12in;
+  }
+
+  .monthly-insights-page .bar-shell,
+  .monthly-insights-page .bar-scale {
+    height: 1.78in;
+  }
+
+  /* Fix clipped gold border on Monthly Goals & Focus pages */
+  .page .monthly-goals-page {
+    width: calc(100% - 0.06in);
+    height: calc(100% - 0.06in);
   }
 
   .log-footer {

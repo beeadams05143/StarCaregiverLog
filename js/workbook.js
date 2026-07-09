@@ -568,14 +568,51 @@ const healthDashboardBlank = articleMarkup(
   `
     <header class="analytics-header"><div><p>STAR Insights and Trends</p><h1>Health, Behavior &amp; ADL Dashboard</h1></div><span>Blank Printable</span></header>
     <div class="patterns-grid refined-patterns">
-      <section class="analytics-panel sleep-panel wide"><h2>Hours of Sleep Over Time</h2><svg class="chart-svg full-line-chart blank-chart" viewBox="0 0 620 150" role="img" aria-label="Hours of sleep line graph"><g class="grid-lines"><path d="M45 20 H590 M45 45 H590 M45 70 H590 M45 95 H590 M45 120 H590 M55 20 V120 M123 20 V120 M208 20 V120 M293 20 V120 M378 20 V120 M463 20 V120 M548 20 V120 M565 20 V120"></path></g><path class="axis" d="M45 18 V122 H592"></path><g class="day-ticks"><path d="M55 120 V126 M72 120 V126 M89 120 V126 M106 120 V126 M123 120 V126 M140 120 V126 M157 120 V126 M174 120 V126 M191 120 V126 M208 120 V126 M225 120 V126 M242 120 V126 M259 120 V126 M276 120 V126 M293 120 V126 M310 120 V126 M327 120 V126 M344 120 V126 M361 120 V126 M378 120 V126 M395 120 V126 M412 120 V126 M429 120 V126 M446 120 V126 M463 120 V126 M480 120 V126 M497 120 V126 M514 120 V126 M531 120 V126 M548 120 V126 M565 120 V126"></path></g><g class="major-day-ticks"><path d="M55 118 V128 M123 118 V128 M208 118 V128 M293 118 V128 M378 118 V128 M463 118 V128 M548 118 V128 M565 118 V128"></path></g><text x="24" y="123">4</text><text x="24" y="98">6</text><text x="24" y="73">8</text><text x="20" y="48">10</text><text x="20" y="23">12</text><text x="52" y="140">1</text><text x="118" y="140">5</text><text x="202" y="140">10</text><text x="287" y="140">15</text><text x="372" y="140">20</text><text x="458" y="140">25</text><text x="542" y="140">30</text><text x="560" y="140">31</text></svg><p class="chart-note">Plot one dot each day using Hours of Sleep from the Physical Health section. Connect dots at the end of the month.</p></section>
+      <section class="analytics-panel sleep-panel wide"><h2>Hours of Sleep Over Time</h2><svg class="chart-svg full-line-chart blank-chart" viewBox="0 0 620 150" role="img" aria-label="Hours of sleep line graph"><g class="grid-lines"><path d="M45 20 H590 M45 45 H590 M45 70 H590 M45 95 H590 M45 120 H590 M55 20 V120 M123 20 V120 M208 20 V120 M293 20 V120 M378 20 V120 M463 20 V120 M548 20 V120 M565 20 V120"></path></g><path class="axis" d="M45 18 V122 H592"></path><g class="day-ticks"><path d="M55 120 V126 M72 120 V126 M89 120 V126 M106 120 V126 M123 120 V126 M140 120 V126 M157 120 V126 M174 120 V126 M191 120 V126 M208 120 V126 M225 120 V126 M242 120 V126 M259 120 V126 M276 120 V126 M293 120 V126 M310 120 V126 M327 120 V126 M344 120 V126 M361 120 V126 M378 120 V126 M395 120 V126 M412 120 V126 M429 120 V126 M446 120 V126 M463 120 V126 M480 120 V126 M497 120 V126 M514 120 V126 M531 120 V126 M548 120 V126 M565 120 V126"></path></g><g class="major-day-ticks"><path d="M55 118 V128 M123 118 V128 M208 118 V128 M293 118 V128 M378 118 V128 M463 118 V128 M548 118 V128 M565 118 V128"></path></g><text x="24" y="123">4</text><text x="24" y="98">6</text><text x="24" y="73">8</text><text x="20" y="48">10</text><text x="20" y="23">12</text><text x="52" y="140">1</text><text x="118" y="140">5</text><text x="202" y="140">10</text><text x="287" y="140">15</text><text x="372" y="140">20</text><text x="458" y="140">25</text><text x="542" y="140">30</text><text x="560" y="140">31</text><polyline class="sample-line sleep-line" points="55,80 72,80 89,58 106,70 123,92 140,80 157,70 174,86 191,58 208,74 225,58 242,82 259,48 276,74 293,58 310,52 327,64 344,46 361,68 378,54 395,62 412,48 429,58 446,54 463,44 480,58 497,52 514,50 531,48 548,46 565,44"></polyline></svg><p class="chart-note">Plot one dot each day using Hours of Sleep from the Physical Health section. Connect dots at the end of the month.</p></section>
       <section class="analytics-panel health-calendar-panel wide"><h2>Health Event Calendar</h2><div class="event-calendar blank-health-calendar"><b>Sun</b><b>Mon</b><b>Tue</b><b>Wed</b><b>Thu</b><b>Fri</b><b>Sat</b><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div><div class="event-key"><span class="key-blue"></span> Illness <span class="key-purple"></span> PRN Given <span class="key-star">★</span> Medication Change <span class="key-yellow"></span> Change in Appetite <span class="key-green"></span> Night Waking / Difficulty Falling Asleep</div><p class="chart-note">Write the dates into the blank calendar for the month. Mark health events on the correct date using the key.</p></section>
       <section class="analytics-panel wide adl-visual-panel"><h2>ADL Prompt Level Progress Over Time</h2><div class="adl-mini-grid"><svg class="mini-line blank-chart" viewBox="0 0 200 82" role="img" aria-label="Hygiene prompt level mini line graph"><text class="mini-title" x="22" y="12">Hygiene</text><g class="grid-lines"><path d="M22 22 H184 M22 32 H184 M22 42 H184 M22 52 H184 M22 62 H184"></path></g><g class="mini-day-ticks"><path d="M24.0 62 V67 M29.2 62 V67 M34.4 62 V67 M39.6 62 V67 M44.8 62 V67 M50.0 62 V67 M55.2 62 V67 M60.4 62 V67 M65.6 62 V67 M70.8 62 V67 M76.0 62 V67 M81.2 62 V67 M86.4 62 V67 M91.6 62 V67 M96.8 62 V67 M102.0 62 V67 M107.2 62 V67 M112.4 62 V67 M117.6 62 V67 M122.8 62 V67 M128.0 62 V67 M133.2 62 V67 M138.4 62 V67 M143.6 62 V67 M148.8 62 V67 M154.0 62 V67 M159.2 62 V67 M164.4 62 V67 M169.6 62 V67 M174.8 62 V67 M180.0 62 V67"></path></g><g class="mini-major-ticks"><path d="M24.0 59 V69 M44.8 59 V69 M96.8 59 V69 M148.8 59 V69 M180.0 59 V69"></path></g><g class="mini-y-ticks"><path d="M18 22 H24 M18 32 H24 M18 42 H24 M18 52 H24 M18 62 H24"></path></g><path class="axis" d="M22 20 V62 H186"></path><text x="10" y="64">0</text><text x="10" y="54">1</text><text x="10" y="44">2</text><text x="10" y="34">3</text><text x="10" y="24">4</text><text x="21" y="76">1</text><text x="42" y="76">5</text><text x="67" y="76">10</text><text x="93" y="76">15</text><text x="119" y="76">20</text><text x="145" y="76">25</text><text x="171" y="76">30</text><text x="180" y="76">31</text></svg><svg class="mini-line blank-chart" viewBox="0 0 200 82" role="img" aria-label="Dressing prompt level mini line graph"><text class="mini-title" x="22" y="12">Dressing</text><g class="grid-lines"><path d="M22 22 H184 M22 32 H184 M22 42 H184 M22 52 H184 M22 62 H184"></path></g><g class="mini-day-ticks"><path d="M24.0 62 V67 M29.2 62 V67 M34.4 62 V67 M39.6 62 V67 M44.8 62 V67 M50.0 62 V67 M55.2 62 V67 M60.4 62 V67 M65.6 62 V67 M70.8 62 V67 M76.0 62 V67 M81.2 62 V67 M86.4 62 V67 M91.6 62 V67 M96.8 62 V67 M102.0 62 V67 M107.2 62 V67 M112.4 62 V67 M117.6 62 V67 M122.8 62 V67 M128.0 62 V67 M133.2 62 V67 M138.4 62 V67 M143.6 62 V67 M148.8 62 V67 M154.0 62 V67 M159.2 62 V67 M164.4 62 V67 M169.6 62 V67 M174.8 62 V67 M180.0 62 V67"></path></g><g class="mini-major-ticks"><path d="M24.0 59 V69 M44.8 59 V69 M96.8 59 V69 M148.8 59 V69 M180.0 59 V69"></path></g><g class="mini-y-ticks"><path d="M18 22 H24 M18 32 H24 M18 42 H24 M18 52 H24 M18 62 H24"></path></g><path class="axis" d="M22 20 V62 H186"></path><text x="10" y="64">0</text><text x="10" y="54">1</text><text x="10" y="44">2</text><text x="10" y="34">3</text><text x="10" y="24">4</text><text x="21" y="76">1</text><text x="42" y="76">5</text><text x="67" y="76">10</text><text x="93" y="76">15</text><text x="119" y="76">20</text><text x="145" y="76">25</text><text x="171" y="76">30</text><text x="180" y="76">31</text></svg></div></section>
     </div>
   `
 );
 
-function monthlyGoalsMarkup() {
+function extractArticleInner(articleHtml) {
+  // Extract the content inside the article wrapper added by articleMarkup().
+  return articleHtml.replace(/^<article[^>]*>/, '').replace(/<\/article>\s*$/, '');
+}
+
+function stripFirstAnalyticsHeader(innerHtml) {
+  // Remove the first <header>...</header> block (the dashboard title header).
+  return innerHtml.replace(/<header[^>]*>[\s\S]*?<\/header>/, '');
+}
+
+const monthlyAndHealthCombinedBlank = articleMarkup(
+  [
+    'analytics-page',
+    'combined-dashboards-page',
+    'monthly-insights-page',
+    'monthly-patterns-page',
+    'blank-template'
+  ],
+  `
+    <header class="analytics-header">
+      <div><p>STAR Insights and Trends</p><h1>Monthly Outcomes Dashboard</h1></div>
+      <span>Blank Printable</span>
+    </header>
+
+    <div class="combined-columns">
+      <div class="combined-col combined-outcomes">
+      ${stripFirstAnalyticsHeader(extractArticleInner(monthlyOutcomesBlank))}
+      </div>
+
+      <div class="combined-col combined-health">
+        <div class="combined-section-title">Health, Behavior &amp; ADL Dashboard</div>
+      ${stripFirstAnalyticsHeader(extractArticleInner(healthDashboardBlank))}
+      </div>
+    </div>
+  `
+);
+
+function monthlyGoalsPage1Markup() {
   return articleMarkup(
     ['monthly-goals-page'],
     `
@@ -655,6 +692,26 @@ function monthlyGoalsMarkup() {
             <input type="checkbox">
             <label>Activities of Daily Living (ADLs)</label>
           </div>
+        </div>
+      </section>
+    `
+  );
+}
+
+function monthlyGoalsPage2Markup() {
+  return articleMarkup(
+    ['monthly-goals-page'],
+    `
+      <header class="star-title">
+        <div class="star-mark">☆</div>
+        <p>STAR</p>
+        <span>Support Tool for Autonomy and Reflection</span>
+        <h1>Monthly Goals & Focus</h1>
+      </header>
+
+      <section class="goals-section">
+        <h3>Primary Areas of Focus (Continued)</h3>
+        <div class="focus-grid">
           <div class="focus-item">
             <input type="checkbox">
             <label>Exercise / Wellness</label>
@@ -731,6 +788,62 @@ function monthlyGoalsMarkup() {
   );
 }
 
+function authorNotePageMarkup() {
+  return articleMarkup(
+    ['author-note-page'],
+    `
+      <header class="author-note-header star-title">
+        <div class="star-mark">☆</div>
+        <p>STAR</p>
+        <span>Support Tool for Autonomy and Reflection</span>
+        <h1>Your Journey Continues</h1>
+        <div class="title-rule"><span></span><b>☆</b><span></span></div>
+      </header>
+
+      <div class="author-note-body">
+        <p>If you’ve reached this page, I want to say something that I know you don’t hear often enough…</p>
+
+        <p class="author-note-highlight"><strong>I’m proud of you.</strong> And You are doing a GREAT job!</p>
+
+        <p>I didn’t create this workbook because I’m an expert looking in from the outside. I created it because I live this life every day as a parent, guardian, and caregiver to my adult son, Benny, who has autism and complex mental health needs.</p>
+
+        <p>I know what it’s like to juggle appointments, medications, behavior changes, celebrations, setbacks, paperwork, and everything else that comes with supporting someone you love. I also know the challenge of finding, training, and keeping great caregivers, and how important it is for everyone to have the same information.</p>
+
+        <p>Over the years, I found myself thinking, <em>I wish there was an easier way.</em> Not just to keep track of everything and communicate it to the team, but to help me capture, see, and understand the little things that are so easy to miss. Because I’ve learned that it’s often those small, subtle changes—noticed over days, weeks, or months—that tell a story we couldn’t see before.</p>
+
+        <p>When we begin recording those seemingly small details over time, patterns begin to emerge. Those patterns can help explain behavior changes, identify triggers, recognize progress, and guide better decisions. They can lead to meaningful conversations with providers, support teams, caregivers, and family members. They can influence goals, outcomes, programming, community activities, leisure opportunities, and the supports a person receives. Sometimes they simply remind us that a difficult season is temporary. Other times, they help us recognize just how far we have come.</p>
+
+        <p>Life is rarely a straight path. Sometimes we move confidently toward our goals. Other times, unexpected challenges (or “zigger zaggers,” as Benny calls them) mean we need to pause, pivot, change direction, or begin again. That’s not failure. It’s simply part of the journey.</p>
+
+        <p>My hope is that STAR becomes more than a workbook. I hope it becomes a trusted guide that helps you notice even the little things that speak subtly and use them to reflect with greater understanding and move forward with confidence. Because when we can clearly see where we’ve been, we’re better equipped to decide where to go next.</p>
+
+        <p>Just as people have looked to the North Star to help them find their way, my hope is that the tools I create help you navigate your own journey with clarity, confidence, and hope.</p>
+
+        <p>Thank you for trusting me to be a small part of your journey. No matter where life leads, I hope you always have a North Star to help you find your way. No matter where your journey leads, may you always have your North Star to help you find your way.</p>
+
+        <p class="author-note-signoff">With gratitude,</p>
+
+        <div class="author-identity">
+          <strong>Beth Adams</strong>
+          <span>Parent • Guardian • Caregiver</span>
+          <span>Creator of North Star Solutions Tech and the STAR Workbook</span>
+        </div>
+      </div>
+
+      <footer class="author-note-footer">
+        <div class="author-photo-frame" aria-label="Photo placeholder for Beth Adams and Benny">
+          <span class="author-photo-fallback">Beth &amp;<br>Benny</span>
+          <img src="images/beth-benny.jpg" alt="Beth Adams and her son Benny" onerror="this.style.display='none'">
+        </div>
+
+        <div class="author-qr-frame" aria-label="QR code placeholder for STAR resources">
+          <span>STAR<br>Resources<br>Coming Soon</span>
+        </div>
+      </footer>
+    `
+  );
+}
+
 function dividerPage(monthNumber, startDay, endDay) {
   return pageMarkup(
     `Month ${monthNumber} divider`,
@@ -777,7 +890,7 @@ function sampleMonthlyOutcomesPage() {
         <div><p>STAR Insights and Trends</p><h1>Monthly Outcomes Dashboard</h1></div>
         <span>Sample Completed</span>
       </header>
-      <section class="use-box compact-use"><h2>Sample Completed Dashboard</h2><p>Sample completed pages show one realistic way the monthly charts may look when finished. Blank pages are optimized for photocopying and repeated monthly use.</p></section>
+      <section class="use-box compact-use"><h2>How to Use This Dashboard</h2><p>Use the Daily Caregiver Log to complete the blank charts by hand. Color one mood slice each day, fill monthly bars upward, and plot prompt-level dots daily.</p></section>
       <div class="analytics-fields three compact-fields"><label>Month <span>May 2026</span></label><label>Individual <span>Alex R.</span></label><label>Caregiver <span>Jordan M.</span></label></div>
       <section class="insight-metrics">
         <div class="metric-card"><b>Average Hours of Sleep</b><span>7.1</span><small>Source: Physical Health.</small></div>
@@ -799,6 +912,95 @@ function sampleMonthlyOutcomesPage() {
           <label>General Observations <span>Prompt levels declined as sleep stabilized.</span></label>
         </div>
       </section>
+
+      <div class="insights-grid refined-grid">
+        <section class="analytics-panel mood-wheel-panel">
+          <h2>31-Day Mood Wheel</h2>
+          <div class="wheel-layout">
+            <svg class="chart-svg mood-wheel" viewBox="0 0 200 200" role="img" aria-label="31 slice blank mood wheel">
+              <circle cx="100" cy="100" r="78"></circle>
+              <line x1="100" y1="100" x2="100.00" y2="22.00"></line>
+              <line x1="100" y1="100" x2="115.70" y2="23.60"></line>
+              <line x1="100" y1="100" x2="130.76" y2="28.32"></line>
+              <line x1="100" y1="100" x2="144.56" y2="35.98"></line>
+              <line x1="100" y1="100" x2="156.53" y2="46.26"></line>
+              <line x1="100" y1="100" x2="166.19" y2="58.74"></line>
+              <line x1="100" y1="100" x2="173.14" y2="72.91"></line>
+              <line x1="100" y1="100" x2="177.10" y2="88.19"></line>
+              <line x1="100" y1="100" x2="177.90" y2="103.95"></line>
+              <line x1="100" y1="100" x2="175.51" y2="119.55"></line>
+              <line x1="100" y1="100" x2="170.03" y2="134.35"></line>
+              <line x1="100" y1="100" x2="161.68" y2="147.74"></line>
+              <line x1="100" y1="100" x2="150.81" y2="159.18"></line>
+              <line x1="100" y1="100" x2="137.85" y2="168.20"></line>
+              <line x1="100" y1="100" x2="123.35" y2="174.42"></line>
+              <line x1="100" y1="100" x2="107.89" y2="177.60"></line>
+              <line x1="100" y1="100" x2="92.11" y2="177.60"></line>
+              <line x1="100" y1="100" x2="76.65" y2="174.42"></line>
+              <line x1="100" y1="100" x2="62.15" y2="168.20"></line>
+              <line x1="100" y1="100" x2="49.19" y2="159.18"></line>
+              <line x1="100" y1="100" x2="38.32" y2="147.74"></line>
+              <line x1="100" y1="100" x2="29.97" y2="134.35"></line>
+              <line x1="100" y1="100" x2="24.49" y2="119.55"></line>
+              <line x1="100" y1="100" x2="22.10" y2="103.95"></line>
+              <line x1="100" y1="100" x2="22.90" y2="88.19"></line>
+              <line x1="100" y1="100" x2="26.86" y2="72.91"></line>
+              <line x1="100" y1="100" x2="33.81" y2="58.74"></line>
+              <line x1="100" y1="100" x2="43.47" y2="46.26"></line>
+              <line x1="100" y1="100" x2="55.44" y2="35.98"></line>
+              <line x1="100" y1="100" x2="69.24" y2="28.32"></line>
+              <line x1="100" y1="100" x2="84.30" y2="23.60"></line>
+            </svg>
+            <div class="legend-lines mood-legend report-lines">
+              <label><i class="mood-stable"></i>Stable <span>20 days</span></label>
+              <label><i class="mood-anxious"></i>Anxious <span>5 days</span></label>
+              <label><i class="mood-elevated"></i>Elevated <span>3 days</span></label>
+              <label><i class="mood-irritable"></i>Irritable <span>2 days</span></label>
+              <label><i class="mood-dysregulated"></i>Dysregulated <span>1 day</span></label>
+            </div>
+          </div>
+          <div class="event-key mood-key">
+            <span class="mood-stable"></span> Stable <span class="mood-anxious"></span> Anxious <span class="mood-elevated"></span> Elevated <span class="mood-irritable"></span> Irritable <span class="mood-dysregulated"></span> Dysregulated
+          </div>
+          <p class="chart-note">Color one slice each day using the primary mood from the Daily Caregiver Log.</p>
+        </section>
+
+        <section class="analytics-panel participation-bars-panel">
+          <h2>Participation Hours by Life Area</h2>
+          <div class="professional-bar-chart blank-chart" role="img" aria-label="Monthly participation hours bar chart">
+            <div class="bar-scale">
+              <span>40</span><span>35</span><span>30</span><span>25</span><span>20</span><span>15</span><span>10</span><span>5</span><span>0</span>
+            </div>
+            <div class="bar-plot">
+              <div class="bar-column"><div class="bar-shell"></div><b><span>Employment /</span><span>Vocational</span></b></div>
+              <div class="bar-column"><div class="bar-shell"></div><b><span>Community</span><span>at Large</span></b></div>
+              <div class="bar-column"><div class="bar-shell"></div><b><span>Home / Family</span><span>Community</span></b></div>
+              <div class="bar-column"><div class="bar-shell"></div><b><span>Leisure /</span><span>Recreation</span></b></div>
+              <div class="bar-column"><div class="bar-shell"></div><b><span>Activities of Daily</span><span>Living (ADLs)</span></b></div>
+            </div>
+          </div>
+          <p class="chart-note">Total or average monthly hours for each area. Color each blank bar upward to the number of hours.</p>
+        </section>
+
+        <section class="analytics-panel wide prompt-line-panel">
+          <h2>Average Participation Prompt Level Over Time</h2>
+          <svg class="chart-svg full-line-chart blank-chart" viewBox="0 0 620 150" role="img" aria-label="Average participation prompt level line graph">
+            <g class="grid-lines">
+              <path d="M45 20 H590 M45 45 H590 M45 70 H590 M45 95 H590 M45 120 H590 M55 20 V120 M123 20 V120 M208 20 V120 M293 20 V120 M378 20 V120 M463 20 V120 M548 20 V120 M565 20 V120"></path>
+            </g>
+            <path class="axis" d="M45 18 V122 H592"></path>
+            <g class="day-ticks">
+              <path d="M55 120 V126 M72 120 V126 M89 120 V126 M106 120 V126 M123 120 V126 M140 120 V126 M157 120 V126 M174 120 V126 M191 120 V126 M208 120 V126 M225 120 V126 M242 120 V126 M259 120 V126 M276 120 V126 M293 120 V126 M310 120 V126 M327 120 V126 M344 120 V126 M361 120 V126 M378 120 V126 M395 120 V126 M412 120 V126 M429 120 V126 M446 120 V126 M463 120 V126 M480 120 V126 M497 120 V126 M514 120 V126 M531 120 V126 M548 120 V126 M565 120 V126"></path>
+            </g>
+            <g class="major-day-ticks">
+              <path d="M55 118 V128 M123 118 V128 M208 118 V128 M293 118 V128 M378 118 V128 M463 118 V128 M548 118 V128 M565 118 V128"></path>
+            </g>
+            <text x="24" y="123">0</text><text x="24" y="98">1</text><text x="24" y="73">2</text><text x="24" y="48">3</text><text x="24" y="23">4</text>
+            <text x="52" y="140">1</text><text x="118" y="140">5</text><text x="202" y="140">10</text><text x="287" y="140">15</text><text x="372" y="140">20</text><text x="458" y="140">25</text><text x="542" y="140">30</text><text x="560" y="140">31</text>
+          </svg>
+          <p class="chart-note">Plot one dot each day using the average participation prompt level from the Daily Caregiver Log. Connect dots at the end of the month.</p>
+        </section>
+      </div>
     `
   );
 }
@@ -823,9 +1025,36 @@ function sampleHealthDashboardPage() {
         </section>
         <section class="analytics-panel health-calendar-panel wide">
           <h2>Health Event Calendar</h2>
-          <div class="event-calendar sample-calendar"><b>Sun</b><b>Mon</b><b>Tue</b><b>Wed</b><b>Thu</b><b>Fri</b><b>Sat</b><span></span><span></span><span></span><span>1</span><span>2</span><span>3</span><span>4</span><span>5</span><span>6</span><span>7</span><span>8 ●</span><span>9</span><span>10</span><span>11</span><span>12 ▲</span><span>13</span><span>14 ★</span><span>15</span><span>16</span><span>17</span><span>18</span><span>19</span><span>20</span><span>21 ◆</span><span>22</span><span>23</span><span>24</span><span>25</span><span>26</span><span>27</span><span>28</span><span>29</span><span>30 ■</span><span>31</span><span></span></div>
+          <div class="event-calendar blank-health-calendar"><b>Sun</b><b>Mon</b><b>Tue</b><b>Wed</b><b>Thu</b><b>Fri</b><b>Sat</b><span></span><span></span><span></span><span>1</span><span>2</span><span>3</span><span>4</span><span>5</span><span>6</span><span>7</span><span>8 ●</span><span>9</span><span>10</span><span>11</span><span>12 ▲</span><span>13</span><span>14 ★</span><span>15</span><span>16</span><span>17</span><span>18</span><span>19</span><span>20</span><span>21 ◆</span><span>22</span><span>23</span><span>24</span><span>25</span><span>26</span><span>27</span><span>28</span><span>29</span><span>30 ■</span><span>31</span><span></span></div>
           <div class="event-key"><span class="key-blue"></span> Illness <span class="key-purple"></span> PRN Given <span class="key-star">★</span> Medication Change <span class="key-yellow"></span> Change in Appetite <span class="key-green"></span> Night Waking / Difficulty Falling Asleep</div>
           <p class="chart-note">Write the dates into the blank calendar for the month. Mark health events on the correct date using the key.</p>
+        </section>
+
+        <section class="analytics-panel wide adl-visual-panel">
+          <h2>ADL Prompt Level Progress Over Time</h2>
+          <div class="adl-mini-grid">
+            <svg class="mini-line blank-chart" viewBox="0 0 200 82" role="img" aria-label="Hygiene prompt level mini line graph">
+              <text class="mini-title" x="22" y="12">Hygiene</text>
+              <g class="grid-lines"><path d="M22 22 H184 M22 32 H184 M22 42 H184 M22 52 H184 M22 62 H184"></path></g>
+              <g class="mini-day-ticks"><path d="M24.0 62 V67 M29.2 62 V67 M34.4 62 V67 M39.6 62 V67 M44.8 62 V67 M50.0 62 V67 M55.2 62 V67 M60.4 62 V67 M65.6 62 V67 M70.8 62 V67 M76.0 62 V67 M81.2 62 V67 M86.4 62 V67 M91.6 62 V67 M96.8 62 V67 M102.0 62 V67 M107.2 62 V67 M112.4 62 V67 M117.6 62 V67 M122.8 62 V67 M128.0 62 V67 M133.2 62 V67 M138.4 62 V67 M143.6 62 V67 M148.8 62 V67 M154.0 62 V67 M159.2 62 V67 M164.4 62 V67 M169.6 62 V67 M174.8 62 V67 M180.0 62 V67"></path></g>
+              <g class="mini-major-ticks"><path d="M24.0 59 V69 M44.8 59 V69 M96.8 59 V69 M148.8 59 V69 M180.0 59 V69"></path></g>
+              <g class="mini-y-ticks"><path d="M18 22 H24 M18 32 H24 M18 42 H24 M18 52 H24 M18 62 H24"></path></g>
+              <path class="axis" d="M22 20 V62 H186"></path>
+              <text x="10" y="64">0</text><text x="10" y="54">1</text><text x="10" y="44">2</text><text x="10" y="34">3</text><text x="10" y="24">4</text>
+              <text x="21" y="76">1</text><text x="42" y="76">5</text><text x="67" y="76">10</text><text x="93" y="76">15</text><text x="119" y="76">20</text><text x="145" y="76">25</text><text x="171" y="76">30</text><text x="180" y="76">31</text>
+            </svg>
+
+            <svg class="mini-line blank-chart" viewBox="0 0 200 82" role="img" aria-label="Dressing prompt level mini line graph">
+              <text class="mini-title" x="22" y="12">Dressing</text>
+              <g class="grid-lines"><path d="M22 22 H184 M22 32 H184 M22 42 H184 M22 52 H184 M22 62 H184"></path></g>
+              <g class="mini-day-ticks"><path d="M24.0 62 V67 M29.2 62 V67 M34.4 62 V67 M39.6 62 V67 M44.8 62 V67 M50.0 62 V67 M55.2 62 V67 M60.4 62 V67 M65.6 62 V67 M70.8 62 V67 M76.0 62 V67 M81.2 62 V67 M86.4 62 V67 M91.6 62 V67 M96.8 62 V67 M102.0 62 V67 M107.2 62 V67 M112.4 62 V67 M117.6 62 V67 M122.8 62 V67 M128.0 62 V67 M133.2 62 V67 M138.4 62 V67 M143.6 62 V67 M148.8 62 V67 M154.0 62 V67 M159.2 62 V67 M164.4 62 V67 M169.6 62 V67 M174.8 62 V67 M180.0 62 V67"></path></g>
+              <g class="mini-major-ticks"><path d="M24.0 59 V69 M44.8 59 V69 M96.8 59 V69 M148.8 59 V69 M180.0 59 V69"></path></g>
+              <g class="mini-y-ticks"><path d="M18 22 H24 M18 32 H24 M18 42 H24 M18 52 H24 M18 62 H24"></path></g>
+              <path class="axis" d="M22 20 V62 H186"></path>
+              <text x="10" y="64">0</text><text x="10" y="54">1</text><text x="10" y="44">2</text><text x="10" y="34">3</text><text x="10" y="24">4</text>
+              <text x="21" y="76">1</text><text x="42" y="76">5</text><text x="67" y="76">10</text><text x="93" y="76">15</text><text x="119" y="76">20</text><text x="145" y="76">25</text><text x="171" y="76">30</text><text x="180" y="76">31</text>
+            </svg>
+          </div>
         </section>
       </div>
     `
@@ -842,22 +1071,34 @@ const workbookPages = [
   pageMarkup('Sample Health Dashboard', [], sampleHealthDashboardPage())
 ];
 
-const months = [
-  { monthNumber: 1, startDay: 1, endDay: 31, logCount: 31 },
-  { monthNumber: 2, startDay: 32, endDay: 61, logCount: 30 },
-  { monthNumber: 3, startDay: 62, endDay: 90, logCount: 29 }
-];
+// Six-month / 180-day sequence: 31 + 30 + 29 days per quarter (repeated).
+const MONTH_DAY_COUNTS = [31, 30, 29, 31, 30, 29];
+
+let nextStartDay = 1;
+const months = MONTH_DAY_COUNTS.map((logCount, index) => {
+  const monthNumber = index + 1;
+  const startDay = nextStartDay;
+  const endDay = startDay + logCount - 1;
+  nextStartDay = endDay + 1;
+  return { monthNumber, startDay, endDay, logCount };
+});
 
 months.forEach(({ monthNumber, startDay, endDay, logCount }) => {
   workbookPages.push(dividerPage(monthNumber, startDay, endDay));
-  workbookPages.push(pageMarkup(`Month ${monthNumber} Goals & Focus`, [], monthlyGoalsMarkup()));
+  workbookPages.push(pageMarkup(`Month ${monthNumber} Goals & Focus - Page 1`, [], monthlyGoalsPage1Markup()));
+  workbookPages.push(pageMarkup(`Month ${monthNumber} Goals & Focus - Page 2`, [], monthlyGoalsPage2Markup()));
   for (let index = 0; index < logCount; index += 1) {
     workbookPages.push(pageMarkup('Daily Caregiver Log left page', ['daily-log-page'], blankLogLeft));
     workbookPages.push(pageMarkup('Daily Caregiver Log right page', ['daily-log-page'], blankLogRight));
   }
-  workbookPages.push(pageMarkup(`Month ${monthNumber} Monthly Outcomes Dashboard`, [], monthlyOutcomesBlank));
-  workbookPages.push(pageMarkup(`Month ${monthNumber} Health, Behavior & ADL Dashboard`, [], healthDashboardBlank));
+  workbookPages.push(pageMarkup(
+    `Month ${monthNumber} Monthly Outcomes & Health/Behavior/ADL Dashboard`,
+    [],
+    monthlyAndHealthCombinedBlank
+  ));
 });
+
+workbookPages.push(pageMarkup('Your Journey Continues', [], authorNotePageMarkup()));
 
 workbook.innerHTML = workbookPages.join('');
 
